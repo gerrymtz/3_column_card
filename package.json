@@ -1,0 +1,27 @@
+{
+  "name": "3_column_card",
+  "version": "1.0.0",
+  "description": "Challenge Frontend mentor",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gerrymtz/3_column_card.git"
+  },
+  "keywords": [
+    "HTML5",
+    "CSS3",
+    "SASS"
+  ],
+  "author": "Gerardo Martínez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gerrymtz/3_column_card/issues"
+  },
+  "homepage": "https://github.com/gerrymtz/3_column_card#readme",
+  "devDependencies": {
+    "sass": "^1.50.0"
+  }
+}
