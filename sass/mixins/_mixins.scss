@@ -1,0 +1,45 @@
+@mixin resetGeneralSettings {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin setHTML {
+    font-size: 16px;
+    color: white;
+}
+
+@mixin setBody {
+    min-height: 100vh;
+    width: 100%;
+}
+
+@mixin setContainer {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 60px 0;
+}
+
+@mixin setColorCard($numberCard, $backgroundColorCard) {
+
+    &:nth-child(#{$numberCard}) {
+        background-color: $backgroundColorCard;
+
+        .card__link {
+            color: $backgroundColorCard;
+        }
+
+    }
+
+}
+
+@mixin setBorderRadius($numberCard, $r1, $r2, $r3, $r4) {
+
+    &:nth-child(#{$numberCard}) {
+        border-radius: $r1 $r2 $r3 $r4;
+    }
+
+}

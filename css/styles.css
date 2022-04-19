@@ -1,5 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+*,
+::after,
+::before {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  color: white;
+}
+
 body {
-  background-color: crimson;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.container {
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 60px 0;
+}
+
+.main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: hsl(0deg, 0%, 95%);
+}
+.main .columns {
+  height: auto;
+}
+.main .columns .columns__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 500px;
+}
+.main .columns .columns__container .columns__card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  font-family: "Lexend Deca", sans-serif;
+}
+.main .columns .columns__container .columns__card:nth-child(1) {
+  background-color: hsl(31deg, 77%, 52%);
+}
+.main .columns .columns__container .columns__card:nth-child(1) .card__link {
+  color: hsl(31deg, 77%, 52%);
+}
+.main .columns .columns__container .columns__card:nth-child(2) {
+  background-color: hsl(184deg, 100%, 22%);
+}
+.main .columns .columns__container .columns__card:nth-child(2) .card__link {
+  color: hsl(184deg, 100%, 22%);
+}
+.main .columns .columns__container .columns__card:nth-child(3) {
+  background-color: hsl(179deg, 100%, 13%);
+}
+.main .columns .columns__container .columns__card:nth-child(3) .card__link {
+  color: hsl(179deg, 100%, 13%);
+}
+.main .columns .columns__container .columns__card:nth-child(1) {
+  border-radius: 10px 0 0 10px;
+}
+.main .columns .columns__container .columns__card:nth-child(2) {
+  border-radius: 0 0 0 0;
+}
+.main .columns .columns__container .columns__card:nth-child(3) {
+  border-radius: 0 10px 10px 0;
+}
+@media screen and (max-width: 425px) {
+  .main .columns .columns__container .columns__card:nth-child(1) {
+    border-radius: 10px 10px 0 0;
+  }
+  .main .columns .columns__container .columns__card:nth-child(2) {
+    border-radius: 0 0 0 0;
+  }
+  .main .columns .columns__container .columns__card:nth-child(3) {
+    border-radius: 0 0 10px 10px;
+  }
+}
+.main .columns .columns__container .columns__card .card__img {
+  width: 80px;
+  height: 80px;
+  display: block;
+  object-fit: contain;
+}
+.main .columns .columns__container .columns__card .card__title {
+  margin: 40px 0 20px;
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 40px;
+  color: hsl(0deg, 0%, 95%);
+}
+.main .columns .columns__container .columns__card .card__paragraph {
+  flex: 1;
+  color: hsla(0deg, 0%, 100%, 0.75);
+}
+.main .columns .columns__container .columns__card .card__link {
+  background-color: hsl(0deg, 0%, 95%);
+  padding: 15px 60px;
+  border-radius: 30px;
+  text-decoration: none;
+  align-self: flex-start;
+  border: 2px solid transparent;
+  transition: 200ms all ease-in;
+}
+.main .columns .columns__container .columns__card .card__link:hover {
+  background-color: transparent;
+  border: 2px solid hsl(0deg, 0%, 95%);
+  color: hsl(0deg, 0%, 95%);
+  transition: 200ms all ease-in;
+}
+.main .attribution {
+  color: black;
+  height: auto;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 20px;
+}
+.main .attribution .attribution__container {
+  height: 130px;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
